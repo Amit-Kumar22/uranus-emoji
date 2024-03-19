@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.hero-image {
+  background-image: url("https://thumbs.dreamstime.com/b/planet-uranus-view-space-nebula-image-elements-furnished-nasa-170638981.jpg");
+  width: 100%;
+  height: 484px;
+  margin: auto;
+  margin-top: 60px;
+}
+
+.myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 18.5%;
+  left: 87.25%;
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  border-color: rgba(85, 85, 85, 0.2);
+  background-color: rgb(100, 100, 100);
+  padding: 0.5px;
+  border-radius: 4px;
+  transition: upwoard 1s linear;
+}
+
+.box1 {
+  background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.box2 {
+  background-image: url("https://images.pexels.com/photos/459277/pexels-photo-459277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.box3 {
+  background-image: url("https://images.pexels.com/photos/960137/pexels-photo-960137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.box4 {
+  background-image: url("https://images.pexels.com/photos/220182/pexels-photo-220182.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+.box5 {
+  background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box6 {
+  background-image: url("https://images.pexels.com/photos/960137/pexels-photo-960137.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.box-galaxy {
+  background-image: url("https://media1.tenor.com/m/q7kw0Muwj3cAAAAC/uranus-uranus101.gif");
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.hero-image,
+.box-galaxy {
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.content {
+  height: 100vh;
+}
+
+.text-content,
+.video,
+.ImageSliding {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  padding: 5px 15px;
+  transform: translate(-50%, -50%);
+  color: black;
+  border-radius: 20px;
+  font-size: 50px;
+}
+
+.video {
+  width: 80%;
+}
+/*On Hover Color Change*/
+.myBtn:hover {
+  background-color: #7dbbf1;
+}
+
+.main-container {
+  width: 100%;
+}
+.Container {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+.section .content {
+  width: 70%;
+  margin: auto;
+}
+
+.section p {
+  font-size: 25px;
+  padding: 0px 0px 32px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.section ul li {
+  font-size: 25px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+h2,
+h4 {
+  font-size: 36px;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+/* Slider Image */
+
+.slider {
+  position: relative;
+  width: 60%;
+  margin: auto;
+  top: 40%;
+}
+.Footer {
+  background-color: rgb(17, 24, 39);
+  color: white;
+  padding: 15px;
+}
+.navlink {
+  font-style: none;
+  color: rgb(107, 114, 128);
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 30rem;
+}
+.copyright {
+  font-family: 18px;
+  color: rgb(156, 163, 175);
+  text-align: center;
+  margin-top: 10px;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+.logo {
+  display: flex;
+  gap: 1rem;
+}
+.logo img {
+  width: 30px;
+  height: 30px;
+}
+.foot-heading {
+  color: rgb(156, 163, 175);
+  font-size: 18px;
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+
+.Slide2 {
+  display: none;
+}
+
+@media screen and (max-width: 685px) {
+  .Container {
+    padding: 10px;
+  }
+  .section ul li{
+    font-size: 16px;
+  }
+
+  .links {
+    gap: 10rem;
+  }
+  .hero-image {
+   background-size: cover;
+  }
+  .box-galaxy{
+    background-size: 120% 70%;
+    background-repeat: no-repeat;
+  }
+  .Slide2 {
+    display: block;
+  }
+  .Slide1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 485px) {
+  .copyright {
+    display: none;
+  }
+  .section ul li{
+    display: none;
+  }
+  .hero-image {
+    background-size: 150%;
+    background-repeat: no-repeat;
+   }
+  .links {
+    gap: 4rem;
+  }
+}
